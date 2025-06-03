@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">MySite</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="login.html" class="active">Login</a>
+            <a href="registration.html">Register</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="home">
+            <div class="home-content">
+                <h1>Login</h1>
+                <form id="login-form" class="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p>Don't have an account? <a href="registration.html">Register here</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Here you could add validation logic (e.g., check username and password)
+
+            // Redirect to the login confirmation page
+            window.location.href = 'login_confirmation.html';
+        }
+    </script>
+</body>
+</html>
