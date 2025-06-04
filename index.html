@@ -12,16 +12,18 @@
     <header>
         <a href="#" class="logo">Rolo</a>
 
-        <nav>
+        <nav id="navbar">
             <a href="#" class="active"> Home</a>
-            <!-- Removed Register, Log In, Admin -->
-            <a href="exp.html" >Experience</a>
-            <a href="contact.html" >Contact</a>
+            <a href="exp.html">Experience</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <button id="menu-toggle" aria-label="Toggle menu">
+            <i class="fa fa-bars"></i>
+        </button>
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="main.jpeg" alt="">
+            <img src="main.jpeg" alt="John Rolo Flores" id="main-image">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>John</span></h1>
@@ -40,5 +42,6 @@
             <a href="contact.html" class="btn">Contact me</a>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
